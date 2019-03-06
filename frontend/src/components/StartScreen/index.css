@@ -1,0 +1,120 @@
+.startScreen-imageBackground {
+  width: 100%;
+  height: 100%;
+  background-image: url(background-image.jpg);
+  background-size: cover;
+  animation: moveIt 600s linear infinite;
+  user-select: none;
+}
+
+.startScreen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #F1F1F1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.startScreen-menu, .startScreen-selectName, .startScreen-createPrivateRoom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.startScreen h1 {
+  font-size: 60px;
+  transition: all 0.5s;
+  color: white;
+}
+
+.startScreen span {
+  cursor: pointer;
+  transition: 0.4s all;
+  text-align: center;
+}
+
+.startScreen span:hover {
+  color: white;
+}
+
+.startScreen form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+}
+
+.startScreen input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #F1F1F1;
+  font-size: 25px;
+  padding-left: 8px;
+  color: #F1F1F1;
+  font-family: Akrobat;
+  font-weight: bold;
+  margin-bottom: 8px;
+  transition: all 0.5s;
+}
+
+.startScreen input[type="text"]::placeholder {
+  color: #F1F1F1;
+}
+
+.startScreen input[type="text"]:focus {
+  border-bottom: 2px solid white;
+  color: white;
+  outline: none;
+}
+
+.startScreen-checkboxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startScreen input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.startScreen-checkboxContainer span {
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+
+.startScreen-checkboxChecked {
+  color: white;
+}
+
+.startScreen button {
+  width: fit-content;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-family: Akrobat;
+  color: #F1F1F1;
+  transition: all 0.5s;
+  margin-top: 8px;
+}
+
+.startScreen button:hover {
+  color: white;
+}
+
+@keyframes moveIt {
+  from {background-position: center left;}
+  to {background-position: center right;}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "geobattle-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Windows87/geobattle.git"
+  },
+  "author": "Yuri Faria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Windows87/geobattle/issues"
+  },
+  "homepage": "https://github.com/Windows87/geobattle#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "ip": "^1.1.5",
+    "nedb": "^1.8.0",
+    "socket.io": "^2.1.1"
+  }
+}

@@ -1,0 +1,115 @@
+.game {
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.game-waiting {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.game-question {
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.game-anotherPlayer, .game-player {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-anotherPlayer {
+  top: 8px;
+  left: 8px;
+}
+
+.game-player {
+  top: 8px;
+  right: 8px;
+}
+
+.game-anotherPlayerName, .game-playerYou {
+  font-weight: bold;
+  font-size: 18px;	
+}
+
+.game-question h2 {
+  text-align: center;
+}
+
+.game-question button {
+  width: 100%;
+  max-width: 400px;
+  margin: 4px;
+  color: gray;
+  font-family: Akrobat;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+.answerSelected {
+  color: white !important;
+  background-color: #2196F3 !important;
+}
+
+.correctAnswer {
+  color: white !important;
+  background-color: green !important;
+}
+
+.oponentAnswered {
+  position: absolute;
+  color: green;
+  bottom: 8px;
+}
+
+.game-ended {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-ended h1 {
+  margin: 4px;
+  margin-bottom: 0px;
+}
+
+.game-ended h2 {
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.game-ended button {
+  width: 100%;
+  max-width: 400px;
+  margin: 4px;
+  color: gray;
+  font-family: Akrobat;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;  
+}
